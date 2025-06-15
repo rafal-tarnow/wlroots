@@ -92,13 +92,13 @@ Install additional dependencies, clone the wlroots repository, and build version
 
 Navigate to the TinyWL build directory and run the TinyWL compositor.
 
-cd ~/wlroots/build/tinywl/
-./tinywl
+- cd ~/wlroots/build/tinywl/
+- ./tinywl
 
 While TinyWL is running, open a new terminal window or tab and set the Wayland display environment variable to test the compositor with a sample application (e.g., GNOME Calculator).
 
-export WAYLAND_DISPLAY=wayland-1
-gnome-calculator
+- export WAYLAND_DISPLAY=wayland-1
+- gnome-calculator
 
 ## Notes
 

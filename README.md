@@ -74,35 +74,40 @@ sudo make install
 
 Install additional dependencies, clone the wlroots repository, and build version 0.17.0. We switch to version 0.17.0 because there are issues with building higher versions on Ubuntu 24.04.
 
-- sudo apt install libxcb-composite0-dev
-- sudo apt install libxcb-res0-dev
-- sudo apt install libxcb-dri3-dev
-- sudo apt install libxcb-dri2-0-dev
-- sudo apt install libxcb-present-dev
-- sudo apt install libxcb-shm0-dev
-- sudo apt install libxcb-xinput-dev
-- sudo apt install libcairo2-dev
+```console
+sudo apt install libxcb-composite0-dev
+sudo apt install libxcb-res0-dev
+sudo apt install libxcb-dri3-dev
+sudo apt install libxcb-dri2-0-dev
+sudo apt install libxcb-present-dev
+sudo apt install libxcb-shm0-dev
+sudo apt install libxcb-xinput-dev
+sudo apt install libcairo2-dev
 
-- cd ~
-- git clone --recurse-submodules https://gitlab.freedesktop.org/wlroots/wlroots.git
-- cd wlroots/
-- git checkout 0.17.0
-- meson setup build/
-- ninja -C build/
-- sudo ninja -C build/ install
-
+cd ~
+git clone --recurse-submodules https://gitlab.freedesktop.org/wlroots/wlroots.git
+cd wlroots/
+git checkout 0.17.0
+meson setup build/
+ninja -C build/
+sudo ninja -C build/ install
+```
 
 ## Step 6: Run TinyWL
 
 Navigate to the TinyWL build directory and run the TinyWL compositor.
 
-- cd ~/wlroots/build/tinywl/
-- ./tinywl
+```console
+cd ~/wlroots/build/tinywl/
+./tinywl
+```
 
 While TinyWL is running, open a new terminal window or tab and set the Wayland display environment variable to test the compositor with a sample application (e.g., GNOME Calculator).
 
-- export WAYLAND_DISPLAY=wayland-1
-- gnome-calculator
+```console
+export WAYLAND_DISPLAY=wayland-1
+gnome-calculator
+```
 
 ## Notes
 

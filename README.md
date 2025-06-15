@@ -10,13 +10,14 @@ Ensure you have administrative privileges to install packages using sudo and you
 
 Install essential build tools and utilities required for compiling wlroots and related dependencies.
 
-- sudo apt install git
-- sudo apt install gitk
-- sudo apt install cmake
-- sudo apt install build-essential
-- sudo apt install pkg-config
-- sudo apt install libtool automake autoconf
-
+```console
+sudo apt install git
+sudo apt install gitk
+sudo apt install cmake
+sudo apt install build-essential
+sudo apt install pkg-config
+sudo apt install libtool automake autoconf
+```
 
 ## Step 2: Install wlroots Dependencies
 
@@ -46,26 +47,28 @@ sudo apt install libliftoff-dev
 
 Install additional dependencies to enable X11 support for wlroots.
 
-- sudo apt install xwayland
-- sudo apt install libxcb1-dev
-- sudo apt install libxcb-render-util0-dev
-- sudo apt install libxcb-icccm4-dev libxcb-ewmh-dev
-
+```console
+sudo apt install xwayland
+sudo apt install libxcb1-dev
+sudo apt install libxcb-render-util0-dev
+sudo apt install libxcb-icccm4-dev libxcb-ewmh-dev
+```
 
 ## Step 4: Install libxcb-errors
 
 Install dependencies and build libxcb-errors from source.
 
-- sudo apt install xutils-dev
-- sudo apt install xcb-proto
-- cd ~
-- git clone --recurse-submodules https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git
-- cd libxcb-errors/
-- ./autogen.sh
-- ./configure
-- make
-- sudo make install
-
+```console
+sudo apt install xutils-dev
+sudo apt install xcb-proto
+cd ~
+git clone --recurse-submodules https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git
+cd libxcb-errors/
+./autogen.sh
+./configure
+make
+sudo make install
+```
 
 ## Step 5: Build and Install wlroots
 

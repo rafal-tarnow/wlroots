@@ -10,12 +10,12 @@ Ensure you have administrative privileges to install packages using sudo and you
 
 Install essential build tools and utilities required for compiling wlroots and related dependencies.
 
-sudo apt install git
-sudo apt install gitk
-sudo apt install cmake
-sudo apt install build-essential
-sudo apt install pkg-config
-sudo apt install libtool automake autoconf
+- sudo apt install git
+- sudo apt install gitk
+- sudo apt install cmake
+- sudo apt install build-essential
+- sudo apt install pkg-config
+- sudo apt install libtool automake autoconf
 
 
 ## Step 2: Install wlroots Dependencies

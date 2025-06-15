@@ -23,23 +23,23 @@ Install essential build tools and utilities required for compiling wlroots and r
 Update the package index and install the core dependencies for wlroots.
 
 ```console
-- sudo apt update
-- sudo apt install meson
-- sudo apt install libwayland-dev
-- sudo apt install wayland-protocols
-- sudo apt install libegl1-mesa-dev libgles2-mesa-dev
-- sudo apt install libvulkan-dev
-- sudo apt install glslang-tools
-- sudo apt install libdrm-dev
-- sudo apt install libgbm-dev
-- sudo apt install libinput-dev
-- sudo apt install libxkbcommon-dev
-- sudo apt install libudev-dev
-- sudo apt install libpixman-1-dev
-- sudo apt install libseat-dev
-- sudo apt install hwdata
-- sudo apt install libdisplay-info-dev
-- sudo apt install libliftoff-dev
+sudo apt update
+sudo apt install meson
+sudo apt install libwayland-dev
+sudo apt install wayland-protocols
+sudo apt install libegl1-mesa-dev libgles2-mesa-dev
+sudo apt install libvulkan-dev
+sudo apt install glslang-tools
+sudo apt install libdrm-dev
+sudo apt install libgbm-dev
+sudo apt install libinput-dev
+sudo apt install libxkbcommon-dev
+sudo apt install libudev-dev
+sudo apt install libpixman-1-dev
+sudo apt install libseat-dev
+sudo apt install hwdata
+sudo apt install libdisplay-info-dev
+sudo apt install libliftoff-dev
 ```
 
 ## Step 3: Install wlroots X11 Support Dependencies

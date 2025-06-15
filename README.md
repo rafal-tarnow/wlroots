@@ -1,4 +1,4 @@
-# Installation Guide for wlroots and TinyWL on Ubuntu 24.04
+# Guide to Preparing Ubuntu 24.04 for Development Work on the wayland wlroots Compositor Project
 
 This guide provides step-by-step instructions to install the necessary build tools, dependencies, and wlroots, as well as how to build and run TinyWL on a clean Ubuntu 24.04 system.
 

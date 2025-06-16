@@ -87,7 +87,8 @@ sudo apt install libcairo2-dev
 cd ~
 git clone --recurse-submodules https://gitlab.freedesktop.org/wlroots/wlroots.git
 cd wlroots/
-git checkout 0.17.0
+git fetch origin
+git checkout 0.17
 meson setup build/
 ninja -C build/
 sudo ninja -C build/ install
